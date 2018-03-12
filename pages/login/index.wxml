@@ -1,0 +1,20 @@
+<wxs module="util">
+
+  var substr = function (string, f, l) {
+    return string.substring(f, l);
+  } 
+
+  module.exports.substr = substr;
+
+</wxs> 
+<view wx:if="{{ news.length > 0 }}">
+  <view class='news-box'>
+    <view class='news' wx:for="{{ news }}" wx:key="key">
+      <view class='news-title'>{{ item.title.length > 15 ? util.substr(item.title, 0, 15) + '...': item.title }}</view>
+      <view class='news-source'>{{item.source}}</view>
+    </view>
+  </view>
+</view>
+<view wx:else>
+  无数据
+</view>

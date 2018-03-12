@@ -1,0 +1,17 @@
+.news-box {
+  border: 1rpx solid red;
+  min-height: 100vh;
+  padding: 0 8rpx;
+}
+.news-box .news {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #ccc;
+  padding: 8rpx;
+}
+.news-box .news .news-title {
+  font-size: 12px;
+}
+.news-box .news .news-source {
+  font-size: 12px;
+}
